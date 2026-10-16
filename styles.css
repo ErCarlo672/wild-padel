@@ -96,9 +96,9 @@ em{font-style:italic;background:var(--fire);-webkit-background-clip:text;backgro
 .hero__canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hero__fallback{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 60% 60%,#1d3f8a 0%,#07090d 70%)}
 .hero__vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,9,13,.88) 0%,rgba(7,9,13,.35) 50%,rgba(7,9,13,0) 75%),linear-gradient(0deg,var(--bg) 0%,transparent 25%)}
-.hero__content{position:absolute;left:var(--gut);bottom:clamp(90px,14vh,150px);max-width:min(760px,92vw);z-index:2}
+.hero__content{position:absolute;left:var(--gut);right:var(--gut);bottom:clamp(90px,14vh,150px);z-index:2}
 .hero__title{font-weight:900;font-size:clamp(3.4rem,min(12vw,19vh),12.5rem);white-space:nowrap;line-height:.82;letter-spacing:-.035em;text-transform:uppercase;font-variation-settings:"wdth" 125;margin-bottom:28px}
-.hero__title .line{display:block;overflow:hidden;padding-bottom:.04em}
+.hero__title .line{display:block;overflow:hidden;overflow:clip;overflow-x:visible;padding-bottom:.04em}
 .hero__title .line>span{display:inline-block}
 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
 .fire{background:var(--fire);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
