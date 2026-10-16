@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wild Padel Indoor · Pádel cubierto en Dos Hermanas</title>
+<meta name="description" content="Wild Padel Indoor: pistas de pádel cubiertas, academia para todos los niveles, vestuarios y cafetería en Dos Hermanas (Sevilla). Reserva tu pista en Playtomic.">
+<meta name="theme-color" content="#07090d">
+<meta property="og:title" content="Wild Padel Indoor · Dos Hermanas">
+<meta property="og:description" content="Pádel cubierto, academia y comunidad. Llueva o haga 45°, aquí se juega.">
+<meta property="og:image" content="assets/img/pista-indoor.webp">
+<link rel="icon" href="assets/img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261016d">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Wild Padel Indoor","description":"Club de pádel indoor y academia en Dos Hermanas, Sevilla.","url":"https://www.wildpadel.es/","telephone":"+34641101365","email":"administracion@wildpadel.es","address":{"@type":"PostalAddress","streetAddress":"Avenida 4 de Diciembre, 2","postalCode":"41702","addressLocality":"Dos Hermanas","addressRegion":"Sevilla","addressCountry":"ES"},"sameAs":["https://www.instagram.com/wildpadelindoor/","https://playtomic.io/wild-padel-indoor/acaebb02-98de-4e90-98d4-7068bf17e240"],"employee":{"@type":"Person","name":"Juan Carlos Sánchez","jobTitle":"Director técnico","sameAs":"https://www.instagram.com/juancarlos__sanchez/"}}
+</script>
+</head>
+<body>
+
+<!-- SPLASH -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash__inner">
+    <img src="assets/img/logo-light.webp" alt="" class="splash__logo" width="460" height="138">
+    <div class="splash__bar"><span id="splashBar"></span></div>
+    <div class="splash__count mono"><span id="splashCount">0</span>%</div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Wild Padel Indoor, inicio">
+    <img src="assets/img/logo-light.webp" alt="Wild Padel" width="460" height="138">
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#club">El club</a>
+    <a href="#instalaciones">Instalaciones</a>
+    <a href="#academia">Academia</a>
+    <a href="#coach">Coach</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn--fire nav__cta magnetic" href="https://playtomic.io/wild-padel-indoor/acaebb02-98de-4e90-98d4-7068bf17e240" target="_blank" rel="noopener">
+    <span>Reservar pista</span><i class="arrow">↗</i>
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu">
+  <a href="#club">El club</a>
+  <a href="#instalaciones">Instalaciones</a>
+  <a href="#academia">Academia</a>
+  <a href="#coach">Coach</a>
+  <a href="#clase">Clase de prueba</a>
+  <a href="#contacto">Contacto</a>
+  <a class="btn btn--fire" href="https://playtomic.io/wild-padel-indoor/acaebb02-98de-4e90-98d4-7068bf17e240" target="_blank" rel="noopener">Reservar pista ↗</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO 3D -->
+  <section class="hero" id="hero">
+    <div class="hero__sticky">
+      <canvas id="court3d" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__fallback" aria-hidden="true"></div>
+      <div class="hero__vignette"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow mono"><span class="dot"></span> Pádel indoor · Dos Hermanas, Sevilla</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Juega</span></span>
+          <span class="line"><span class="outline">sal</span><span class="fire">vaje.</span></span>
+        </h1>
+        <p class="hero__lead">Pistas cubiertas, academia para todos los niveles y una comunidad que no cancela partidos. Llueva o haga 45&nbsp;°C, aquí se juega.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--fire btn--lg magnetic" href="https://playtomic.io/wild-padel-indoor/acaebb02-98de-4e90-98d4-7068bf17e240" target="_blank" rel="noopener"><span>Reserva en Playtomic</span><i class="arrow">↗</i></a>
+          <a class="btn btn--ghost btn--lg magnetic" href="#academia"><span>Ver academia</span><i class="arrow">↓</i></a>
+        </div>
+      </div>
+
+      <div class="hero__hud mono" aria-hidden="true">
+        <div><small>LAT</small> 37.28° N</div>
+        <div><small>LON</small> 5.92° W</div>
+        <div><small>PISTA</small> 20 × 10 m</div>
+        <div><small>CUBIERTA</small> 100%</div>
+      </div>
+      <div class="hero__scroll mono" aria-hidden="true"><span></span>Scroll para entrar a pista</div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Pádel indoor</span><b>●</b><span>Wild Padel Academy</span><b>●</b><span>Competición</span><b>●</b><span>Menores</span><b>●</b><span>Cafetería</span><b>●</b><span>Dos Hermanas</span><b>●</b>
+      <span>Pádel indoor</span><b>●</b><span>Wild Padel Academy</span><b>●</b><span>Competición</span><b>●</b><span>Menores</span><b>●</b><span>Cafetería</span><b>●</b><span>Dos Hermanas</span><b>●</b>
+    </div>
+  </div>
+
+  <!-- CLUB / FEATURES -->
+  <section class="club section" id="club">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow mono reveal">01 — El club</p>
+        <h2 class="h2 reveal">Todo lo que necesitas<br>para <em>jugar más</em><br>y jugar mejor.</h2>
+      </div>
+
+      <div class="features">
+        <article class="feature tilt reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 40V18l16-10 16 10v22"/><path d="M18 40V28h12v12"/></svg>
+          </div>
+          <h3>Comodidades</h3>
+          <p>Vestuarios completos, cafe‑bar social y espacio para quedarte después del partido.</p>
+          <span class="feature__num mono">01</span>
+        </article>
+        <article class="feature tilt reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M24 44s14-12.5 14-24a14 14 0 1 0-28 0c0 11.5 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg>
+          </div>
+          <h3>Ubicación</h3>
+          <p>A pie de la Ctra. Nacional IV Sevilla–Cádiz, km 555. Fácil de llegar, fácil de aparcar.</p>
+          <span class="feature__num mono">02</span>
+        </article>
+        <article class="feature tilt reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="24" cy="24" r="18"/><path d="M24 13v11l7 5"/></svg>
+          </div>
+          <h3>Horario flexible</h3>
+          <p>Franjas pensadas para que encajes el pádel antes del trabajo, a mediodía o por la noche.</p>
+          <span class="feature__num mono">03</span>
+        </article>
+        <article class="feature tilt reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 26h9l5-12 8 22 6-14 3 4h9"/></svg>
+          </div>
+          <h3>Salud y bienestar</h3>
+          <p>Asesoramiento y programas a tu medida para progresar sin lesiones y disfrutar cada set.</p>
+          <span class="feature__num mono">04</span>
+        </article>
+      </div>
+
+      <div class="stats">
+        <div class="stat reveal"><strong data-count="365">365</strong><span>días al año bajo techo</span></div>
+        <div class="stat reveal"><strong data-count="100" data-suffix="%">100%</strong><span>pistas indoor</span></div>
+        <div class="stat reveal"><strong data-count="1800" data-prefix="+">+1.800</strong><span>jugadores formados</span></div>
+        <div class="stat reveal"><strong data-count="4">4</strong><span>programas de academia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALACIONES — horizontal -->
+  <section class="facilities" id="instalaciones">
+    <div class="facilities__pin">
+      <div class="facilities__intro">
+        <p class="eyebrow mono">02 — Instalaciones</p>
+        <h2 class="h2">Un club<br>pensado<br><em>desde la pista.</em></h2>
+        <p class="muted">Desliza para recorrerlo →</p>
+      </div>
+      <div class="facilities__track" id="facTrack">
+        <article class="panel">
+          <figure class="panel__media"><img src="assets/img/pista-indoor.webp" alt="Pista de pádel cubierta con césped azul" loading="lazy"></figure>
+          <div class="panel__body">
+            <span class="mono">02.1</span>
+            <h3>Pistas de pádel</h3>
+            <p>Cristal panorámico, césped de última generación e iluminación uniforme. Bota la bola igual en agosto que en enero.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="panel__media"><img src="assets/img/pista-noche.webp" alt="Pista de pádel vista a través del cristal" loading="lazy"></figure>
+          <div class="panel__body">
+            <span class="mono">02.2</span>
+            <h3>Vestuarios</h3>
+            <p>Duchas, taquillas y espacio de sobra. Llega del trabajo, cámbiate y a la pista en cinco minutos.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="panel__media"><img src="assets/img/club.webp" alt="Jugador en pista de pádel" loading="lazy"></figure>
+          <div class="panel__body">
+            <span class="mono">02.3</span>
+            <h3>Bar · Cafetería social</h3>
+            <p>El tercer set se juega en la barra. Un punto de encuentro para comentar la jugada y organizar el próximo partido.</p>
+          </div>
+        </article>
+        <article class="panel panel--cta">
+          <div class="panel__body">
+            <span class="mono">02.4</span>
+            <h3>¿Lo ves en persona?</h3>
+            <p>Pásate por el club o haz el tour virtual desde casa.</p>
+            <a class="btn btn--fire magnetic" href="https://www.wildpadel.es/conocenos/tour" target="_blank" rel="noopener"><span>Tour virtual</span><i class="arrow">↗</i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto section">
+    <div class="wrap">
+      <p class="manifesto__text" id="manifesto">No venimos a pasar la tarde. Venimos a sudar la camiseta, a ganar el punto que parecía perdido y a salir de la pista con ganas de volver mañana. Eso es jugar salvaje.</p>
+    </div>
+  </section>
+
+  <!-- ACADEMIA -->
+  <section class="academy section" id="academia">
+    <div class="wrap">
+      <div class="section__head section__head--split">
+        <div>
+          <p class="eyebrow mono reveal">03 — Academia</p>
+          <h2 class="h2 reveal">Del primer<br>golpe al <em>podio.</em></h2>
+        </div>
+        <p class="muted reveal">Cuatro programas con entrenadores titulados, grupos reducidos por nivel y un plan claro para que notes la mejora cada semana.</p>
+      </div>
+
+      <div class="programs">
+        <a class="program tilt reveal" href="https://www.wildpadel.es/producto/academia-de-padel-por-equipos" target="_blank" rel="noopener">
+          <span class="program__idx mono">A/01</span>
+          <h3>Por equipos</h3>
+          <p>Entrena con tu pareja o tu equipo de liga. Táctica, posicionamiento y química en pista.</p>
+          <ul class="tags mono"><li>Parejas</li><li>Ligas</li><li>Táctica</li></ul>
+          <span class="program__go">Más info <i class="arrow">↗</i></span>
+        </a>
+        <a class="program tilt reveal" href="https://www.wildpadel.es/producto/academia-de-padel-para-menores" target="_blank" rel="noopener">
+          <span class="program__idx mono">A/02</span>
+          <h3>Menores</h3>
+          <p>Escuela para peques y jóvenes: coordinación, técnica y valores a través del juego.</p>
+          <ul class="tags mono"><li>Iniciación</li><li>Valores</li><li>Diversión</li></ul>
+          <span class="program__go">Más info <i class="arrow">↗</i></span>
+        </a>
+        <a class="program program--hot tilt reveal" href="https://www.wildpadel.es/producto/academia-de-padel-de-competicion" target="_blank" rel="noopener">
+          <span class="program__idx mono">A/03</span>
+          <h3>Competición</h3>
+          <p>Alto rendimiento para quien quiere puntuar en torneos: físico, técnica avanzada y análisis.</p>
+          <ul class="tags mono"><li>Torneos</li><li>Físico</li><li>Vídeo</li></ul>
+          <span class="program__go">Más info <i class="arrow">↗</i></span>
+        </a>
+        <a class="program tilt reveal" href="https://www.wildpadel.es/producto/academia-de-padel-por-grupos" target="_blank" rel="noopener">
+          <span class="program__idx mono">A/04</span>
+          <h3>Por grupos</h3>
+          <p>Clases en grupos por nivel. La forma más divertida de aprender y conocer gente para jugar.</p>
+          <ul class="tags mono"><li>Todos los niveles</li><li>Social</li></ul>
+          <span class="program__go">Más info <i class="arrow">↗</i></span>
+        </a>
+      </div>
+
+      <figure class="academy__photo reveal">
+        <img src="assets/img/academia.webp" alt="Grupo de alumnos de la academia de pádel con sus palas" loading="lazy">
+        <figcaption class="mono">Wild Padel Academy · Equipada por Joma Sport Padel</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- COACH -->
+  <section class="coach section" id="coach">
+    <div class="wrap coach__grid">
+      <div class="coach__stack" aria-hidden="true">
+        <figure class="reelcard reelcard--back2"><img src="assets/img/ig/golpe-clave.webp" alt="" loading="lazy"></figure>
+        <figure class="reelcard reelcard--back1"><img src="assets/img/ig/academy.webp" alt="" loading="lazy"></figure>
+        <figure class="reelcard reelcard--front"><img src="assets/img/ig/tecnica.webp" alt="" loading="lazy">
+          <span class="reelcard__badge mono"><i></i> Director técnico</span>
+        </figure>
+        <svg class="coach__orbit" viewBox="0 0 200 200"><defs><path id="orbitPath" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text><textPath href="#orbitPath">TÉCNICA · TÁCTICA · RESULTADO · TÉCNICA · TÁCTICA · RESULTADO ·</textPath></text></svg>
+      </div>
+
+      <div class="coach__copy">
+        <p class="eyebrow mono reveal">04 — Director técnico</p>
+        <div class="coach__id reveal">
+          <img src="assets/img/ig/coach.webp" alt="Juan Carlos Sánchez" width="150" height="150" loading="lazy">
+          <div>
+            <strong>Juan Carlos Sánchez</strong>
+            <a class="mono" href="https://www.instagram.com/juancarlos__sanchez/" target="_blank" rel="noopener">@juancarlos__sanchez ↗</a>
+          </div>
+        </div>
+        <h2 class="h2 reveal">La técnica<br>se mejora<br><em>con repetición.</em></h2>
+        <p class="coach__lead reveal">Director técnico de Wild Padel Indoor y alma de la <strong>#WildPadelAcademy</strong>. Su método es fácil de contar y exigente de entrenar: corregir el gesto hasta que salga solo, entender por qué se gana cada punto y demostrarlo en partido.</p>
+
+        <div class="pillars">
+          <div class="pillar reveal"><span class="mono">01</span><h3>Técnica</h3><p>Desde cero, golpe a golpe. Repetición guiada hasta que el gesto sale sin pensar.</p></div>
+          <div class="pillar reveal"><span class="mono">02</span><h3>Táctica</h3><p>El resto decide el futuro del punto. Posición, lectura del juego y decisiones en pareja.</p></div>
+          <div class="pillar reveal"><span class="mono">03</span><h3>Resultado</h3><p>Lo entrenado tiene que verse en partido: ligas, torneos y progreso que se nota.</p></div>
+        </div>
+
+        <div class="coach__numbers reveal">
+          <div><strong data-count="1800" data-prefix="+">+1.800</strong><span class="mono">jugadores formados</span></div>
+          <div><strong data-count="29" data-suffix="K">29K</strong><span class="mono">siguen sus consejos</span></div>
+          <div><strong class="joma">JOMA</strong><span class="mono">Sport Padel · partner</span></div>
+        </div>
+
+        <div class="hero__ctas reveal">
+          <a class="btn btn--fire btn--lg magnetic" href="#clase"><span>Pide tu clase de prueba</span><i class="arrow">↓</i></a>
+          <a class="btn btn--ghost btn--lg magnetic" href="https://www.instagram.com/juancarlos__sanchez/" target="_blank" rel="noopener"><span>Ver sus consejos</span><i class="arrow">↗</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REELS 3D -->
+  <section class="reels" id="reels">
+    <div class="wrap reels__head">
+      <div>
+        <p class="eyebrow mono reveal">05 — Aprende en pista</p>
+        <h2 class="h2 reveal">Consejos que<br>se <em>entrenan.</em></h2>
+      </div>
+      <p class="muted reveal">Lecciones grabadas en nuestras pistas por Juan Carlos y el equipo. Arrastra el carrusel y toca cualquiera para verla en Instagram.</p>
+    </div>
+    <div class="carousel" id="carousel">
+      <div class="carousel__ring" id="ring">
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DYUVXK4MuQY/" target="_blank" rel="noopener"><img src="assets/img/ig/tecnica.webp" alt="La técnica se mejora con repetición" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/Dee3LpUNLsg/" target="_blank" rel="noopener"><img src="assets/img/ig/resto.webp" alt="El resto decide el futuro del punto" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/wildpadelindoor/reel/DG_c5YftSVW/" target="_blank" rel="noopener"><img src="assets/img/ig/academy.webp" alt="Clase en Wild Padel Academy" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DeJ1NZLNJYr/" target="_blank" rel="noopener"><img src="assets/img/ig/golpes.webp" alt="Uno de los golpes más difíciles, desde cero" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DeUg9PstF8C/" target="_blank" rel="noopener"><img src="assets/img/ig/pista.webp" alt="Jugadora en las pistas de Wild Padel" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DdeBZVEN0XH/" target="_blank" rel="noopener"><img src="assets/img/ig/golpe-clave.webp" alt="Aprende desde cero el golpe más importante del pádel" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DdY0zxRNnnL/" target="_blank" rel="noopener"><img src="assets/img/ig/medio.webp" alt="Por el medio está prohibido" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DdT3fZ0tEiI/" target="_blank" rel="noopener"><img src="assets/img/ig/entrenar-solo.webp" alt="Entrenar solo y bien es posible" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/juancarlos__sanchez/reel/DdO2NZ8tVel/" target="_blank" rel="noopener"><img src="assets/img/ig/grupos.webp" alt="Entrenamiento para grupos grandes" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+        <a class="reel" href="https://www.instagram.com/wildpadelindoor/reel/DGk2vSHt1_L/" target="_blank" rel="noopener"><img src="assets/img/ig/entrevista.webp" alt="Entrevista en Wild Padel Indoor" loading="lazy" draggable="false"><span class="reel__play"></span></a>
+      </div>
+    </div>
+    <p class="carousel__hint mono" aria-hidden="true">← Arrastra para girar →</p>
+  </section>
+
+  <!-- CLASE DE PRUEBA -->
+  <section class="trial section" id="clase">
+    <div class="wrap trial__grid">
+      <div>
+        <p class="eyebrow mono reveal">06 — Clase de prueba</p>
+        <h2 class="h2 reveal">Tu primera<br>clase, <em>con plan.</em></h2>
+        <p class="muted reveal trial__lead">Cuéntanos tu nivel y qué buscas. Te respondemos por WhatsApp con el grupo y el horario que mejor te encajan.</p>
+      </div>
+      <form class="trial__form reveal" id="trialForm" novalidate>
+        <label class="field"><span class="mono">Nombre</span><input name="nombre" type="text" autocomplete="name" required placeholder="¿Cómo te llamas?"></label>
+        <fieldset class="field">
+          <legend class="mono">Tu nivel</legend>
+          <div class="chips">
+            <label><input type="radio" name="nivel" value="Empiezo de cero" checked><span>Empiezo de cero</span></label>
+            <label><input type="radio" name="nivel" value="Iniciación"><span>Iniciación</span></label>
+            <label><input type="radio" name="nivel" value="Intermedio"><span>Intermedio</span></label>
+            <label><input type="radio" name="nivel" value="Avanzado / competición"><span>Avanzado</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend class="mono">Programa</legend>
+          <div class="chips">
+            <label><input type="radio" name="programa" value="Grupos" checked><span>Grupos</span></label>
+            <label><input type="radio" name="programa" value="Equipos"><span>Equipos</span></label>
+            <label><input type="radio" name="programa" value="Menores"><span>Menores</span></label>
+            <label><input type="radio" name="programa" value="Competición"><span>Competición</span></label>
+          </div>
+        </fieldset>
+        <label class="field"><span class="mono">Disponibilidad (opcional)</span><input name="horario" type="text" placeholder="Ej.: martes y jueves por la tarde"></label>
+        <button class="btn btn--fire btn--lg magnetic" type="submit"><span>Enviar por WhatsApp</span><i class="arrow">↗</i></button>
+        <p class="trial__note mono" id="trialNote">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- BOOK / 3D RACKET -->
+  <section class="book section" id="reserva">
+    <div class="wrap book__grid">
+      <div class="book__copy">
+        <p class="eyebrow mono reveal">07 — Reserva</p>
+        <h2 class="h2 reveal">Tu pista,<br>en <em>tres toques.</em></h2>
+        <ol class="steps">
+          <li class="reveal"><span class="mono">01</span> Abre Wild Padel Indoor en Playtomic</li>
+          <li class="reveal"><span class="mono">02</span> Elige día, hora y pista</li>
+          <li class="reveal"><span class="mono">03</span> Paga y a jugar</li>
+        </ol>
+        <div class="hero__ctas reveal">
+          <a class="btn btn--fire btn--lg magnetic" href="https://playtomic.io/wild-padel-indoor/acaebb02-98de-4e90-98d4-7068bf17e240" target="_blank" rel="noopener"><span>Reservar ahora</span><i class="arrow">↗</i></a>
+          <a class="btn btn--ghost btn--lg magnetic" href="https://wa.me/34641101365" target="_blank" rel="noopener"><span>WhatsApp</span><i class="arrow">↗</i></a>
+        </div>
+      </div>
+      <div class="book__stage">
+        <canvas id="racket3d" aria-hidden="true"></canvas>
+        <div class="book__ring" aria-hidden="true"></div>
+        <p class="book__hint mono" aria-hidden="true">Arrastra para girar la pala</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="wrap faq__grid">
+      <div>
+        <p class="eyebrow mono reveal">08 — Preguntas frecuentes</p>
+        <h2 class="h2 reveal">Antes de<br><em>saltar a pista.</em></h2>
+      </div>
+      <div class="faq__list">
+        <details class="reveal"><summary>¿Cómo reservo una pista?<i></i></summary><p>Desde Playtomic: busca Wild Padel Indoor, elige día, hora y pista, y paga desde la app. Si tienes dudas, llámanos o escríbenos por WhatsApp.</p></details>
+        <details class="reveal"><summary>Nunca he jugado al pádel. ¿Puedo apuntarme?<i></i></summary><p>Claro. La academia tiene grupos de iniciación donde se aprende desde cero, golpe a golpe. Pide una clase de prueba y te ubicamos en tu nivel.</p></details>
+        <details class="reveal"><summary>¿Hay clases para niños?<i></i></summary><p>Sí. La Academia para Menores trabaja coordinación, técnica y valores a través del juego.</p></details>
+        <details class="reveal"><summary>¿Quién dirige la academia?<i></i></summary><p>Juan Carlos Sánchez, director técnico del club, con más de 1.800 jugadores formados. Su método: técnica, táctica y resultado.</p></details>
+        <details class="reveal"><summary>¿Qué pasa si llueve o hace mucho calor?<i></i></summary><p>Nada: nuestras pistas son cubiertas. Se juega todo el año, con la misma bola y el mismo bote.</p></details>
+        <details class="reveal"><summary>¿Dónde estáis?<i></i></summary><p>En la Avenida 4 de Diciembre, 2, Dos Hermanas (Sevilla), junto a la Ctra. Nacional IV Sevilla–Cádiz, km 555.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section class="sponsors" aria-label="Patrocinadores">
+    <p class="mono sponsors__title">Nuestros patrocinadores</p>
+    <div class="sponsors__viewport">
+      <div class="sponsors__track">
+        <span class="hot">Joma Sport Padel</span><b>✦</b><span>Vitucasa</span><b>✦</b><span>Galán &amp; Castillo</span><b>✦</b><span>Hermanos Galán</span><b>✦</b><span>Pizzería Ciao</span><b>✦</b><span>La Bella</span><b>✦</b><span>Fisioterapia Ademán</span><b>✦</b><span>Talleres SAG</span><b>✦</b>
+        <span class="hot">Joma Sport Padel</span><b>✦</b><span>Vitucasa</span><b>✦</b><span>Galán &amp; Castillo</span><b>✦</b><span>Hermanos Galán</span><b>✦</b><span>Pizzería Ciao</span><b>✦</b><span>La Bella</span><b>✦</b><span>Fisioterapia Ademán</span><b>✦</b><span>Talleres SAG</span><b>✦</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contacto">
+    <div class="wrap">
+      <p class="eyebrow mono reveal">09 — Contacto</p>
+      <h2 class="contact__big reveal"><a href="tel:+34641101365">+34 641 10 13 65</a></h2>
+      <div class="contact__grid">
+        <div class="contact__cards">
+          <a class="ccard tilt reveal" href="tel:+34641101365"><span class="mono">Llámanos</span><strong>641 10 13 65</strong></a>
+          <a class="ccard tilt reveal" href="mailto:administracion@wildpadel.es"><span class="mono">Escríbenos</span><strong>administracion@wildpadel.es</strong></a>
+          <a class="ccard tilt reveal" href="https://g.co/kgs/EyogGSR" target="_blank" rel="noopener"><span class="mono">Dónde estamos</span><strong>Av. 4 de Diciembre, 2<br>41702 Dos Hermanas, Sevilla</strong></a>
+          <a class="ccard tilt reveal" href="https://www.instagram.com/wildpadelindoor/" target="_blank" rel="noopener"><span class="mono">Síguenos</span><strong>@wildpadelindoor<br>@juancarlos__sanchez</strong></a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa de Wild Padel Indoor" src="https://www.google.com/maps?q=Avenida+4+de+Diciembre+2,+41702+Dos+Hermanas,+Sevilla&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__mega" aria-hidden="true">WILD<span>PADEL</span></div>
+  <div class="wrap footer__row">
+    <img src="assets/img/logo-light.webp" alt="Wild Padel Indoor" class="footer__logo" width="460" height="138" loading="lazy">
+    <nav class="footer__links" aria-label="Legal">
+      <a href="https://www.wildpadel.es/es/escuela-de-padel-dos-hermanas">Escuela de pádel en Dos Hermanas</a>
+      <a href="https://www.wildpadel.es/es/clases-de-padel-dos-hermanas">Clases de pádel en Dos Hermanas</a>
+      <a href="https://www.wildpadel.es/">Aviso legal</a>
+      <a href="https://www.wildpadel.es/">Privacidad</a>
+      <a href="https://www.wildpadel.es/">Cookies</a>
+    </nav>
+  </div>
+  <div class="wrap footer__row footer__small mono">
+    <span>© <span id="year">2026</span> Wild Padel Indoor · Dos Hermanas</span>
+    <span class="credits">Fotos del club: Instagram de Wild Padel y Juan Carlos Sánchez. Fotos adicionales: Ordercrazy (CC0), Ikusuki (CC BY), pom'. (CC BY-SA), stephendgardner (CC BY) vía Openverse</span>
+  </div>
+</footer>
+
+<a class="wa-float magnetic" href="https://wa.me/34641101365" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.9 1 3.9.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c0-.2-.3-.3-.6-.5z"/></svg>
+</a>
+
+<script src="lib/gsap.min.js?v=20261016b" defer></script>
+<script src="lib/ScrollTrigger.min.js?v=20261016b" defer></script>
+<script src="lib/three.min.js?v=20261016b" defer></script>
+<script src="scene.js?v=20261016b" defer></script>
+<script src="main.js?v=20261016d" defer></script>
+</body>
+</html>
